@@ -43,29 +43,29 @@ const page = () => {
 
       <div className="parent w-full md:flex md:mt-10 md:items-center mt-10">
         <div className='text-sm md:text-xl  w-full md:w-1/2 '>
-          <p className={`${Neuemedium.className}`}>A simple scroll library used by developers at Locomotive. Built as a layer on top of ayamflow's virtual-scroll, it provides smooth scrolling with support for parallax effects, toggling classes, and triggering event listeners when elements are in the viewport.</p>
+          <p className={`${Neuemedium.className} w-1/2 `}>A simple scroll library used by developers at Locomotive. Built as a layer on top of ayamflow's virtual-scroll, it provides smooth scrolling with support for parallax effects, toggling classes, and triggering event listeners when elements are in the viewport.</p>
         </div>
 
-        <div className={`w-full mt-10 md:bg-green-500  gap-5 md:w-1/2 md:text-xl ${neue.className}`}>
-          <div className='flex justify-between uppercase '>
-            <h1>01. Speed Control</h1>
+        <div className={`w-full mt-10  flex flex-col gap-2 md:w-1/2 md:text-xl ${neue.className}`}>
+          <div className='flex justify-between uppercase hover:text-white '>
+            <h1 className=''>01. Speed Control</h1>
             <FaArrowDownLong />
           </div>
           <div className='w-full h-[1px] bg-black'></div>
 
-          <div className='flex justify-between uppercase'>
+          <div className='flex justify-between uppercase hover:text-white'>
             <h1>02. Scroll direction</h1>
             <FaArrowDownLong />
           </div>
           <div className='w-full h-[1px] bg-black'></div>
 
-          <div className='flex justify-between uppercase'>
+          <div className='flex justify-between uppercase hover:text-white'>
             <h1>03. Lerp effect</h1>
             <FaArrowDownLong />
           </div>
           <div className='w-full h-[1px] bg-black'></div>
 
-          <div className='flex justify-between uppercase'>
+          <div className='flex justify-between uppercase hover:text-white'>
             <h1>04. Fixed Elements</h1>
             <FaArrowDownLong />
           </div>
