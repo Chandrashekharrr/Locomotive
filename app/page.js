@@ -3,7 +3,6 @@ import React from "react";
 import localFont from "next/font/local";
 import LocomotiveScroll from "locomotive-scroll";
 import { FaArrowDownLong } from "react-icons/fa6";
-import Image from "next/image";
 
 const neue = localFont({
   src: "../app/fonts/neueBold.otf",
@@ -19,7 +18,7 @@ const page = () => {
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
-    <div className="bg-[#d4c9c9] w-full  p-5 md:px-10 md:py-7">
+    <div className="bg-[#d4c9c9] w-full  p-5 md:px-10 md:py-7 rtbf">
       <div className=" nav flex justify-between uppercase text-base md:text-2xl">
         <h1 className={`${neue.className}`}>Locomotive.ca</h1>
         <h1 className={`${neue.className}`}>v4.x – Edition</h1>
@@ -128,16 +127,14 @@ const page = () => {
             speed x4
           </h1>
 
-
-
-          <img src="./second.jpg" alt="" className="md:w-[40vw] md:h-[120vh] h-[80vh]" />
+          <img
+            src="./second.jpg"
+            alt=""
+            className="md:w-[40vw] md:h-[120vh] h-[80vh]"
+          />
         </div>
 
-
-
         <div className="w-full md:w-1/2 ">
-
-
           <div
             className={`w-20 h-14  md:w-28 md:h-20 ml-1 md:mt-[23rem] mt-[-2rem] md:ml-36 rounded-[70%] bg-black absolute text-white flex justify-center items-center md:text-2xl   ${Neuemedium.className} `}
           >
@@ -160,36 +157,48 @@ const page = () => {
             speed x6
           </h1>
 
-
-          <img src="./third.jpg" alt="" className="w-[30rem] h-96 mt-36 md:ml-48 md:mt-[30rem]" />
-
-
-
-
-
+          <img
+            src="./third.jpg"
+            alt=""
+            className="w-[30rem] h-96 mt-36 md:ml-48 md:mt-[30rem]"
+          />
         </div>
       </div>
 
-
-      <div className="w-full mt-72 h-screen bg-green-500">
-
-        <div className="w-full md:w-1/2">
-        <div className="w-full md:w-[40vw] md:mt-72">
-          <h1 className={`text-2xl ${Neuemedium.className} `}>02.</h1>
-          <h1 className={`text-2xl ${Neuemedium.className} `}>Scroll direction</h1>
-          <p className={`text-sm ${Neuemedium.className} mt-5 `}>
-            And if that wasn't enough, make' me go backwards. <br />
-            Or upwards. Or downwards!
-          </p>
-        </div>
-        
+      <div className="w-full mt-[30rem] sticky top-40  " >
+        <div className="w-full md:w-1/2 ">
+          <div className="w-full md:w-[40vw] md:mt-72">
+            <h1 className={`text-2xl ${Neuemedium.className} `}>02.</h1>
+            <h1 className={`text-2xl ${Neuemedium.className} `}>
+              Scroll direction
+            </h1>
+            <p className={`text-sm ${Neuemedium.className} mt-5 `}>
+              And if that wasn't enough, make' me go backwards. <br />
+              Or upwards. Or downwards!
+            </p>
+          </div>
         </div>
       </div>
 
+      <div className="my-10 h-screen bg-red-500">
 
+      <h1 data-scroll data-scroll-orientation = "horizontal" className= {`bg-white  uppercase text-[9vw] rotate-45 leading-none ${neue.className} `}>Ok, enough!!!!</h1>
+      <h1 className= {`bg-red-500  uppercase text-[9vw] rotate-180  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
+      <h1 className= {`bg-white  uppercase text-[9vw] rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
+      <h1 className= {`bg-white  uppercase text-[9vw] rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
+      <h1 className= {`bg-white  uppercase text-[9vw] -rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
+      <h1 className= {`bg-white  uppercase text-[9vw] rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
+      <h1 className= {`bg-white  uppercase text-[9vw] rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
+      </div>
 
+      <div className="bg-green-400 w-full h-screen mt-96 ">
 
+        afefwes
+      </div>
+      <div className="bg-green-400 w-full h-screen mt-96">
 
+        afefwes
+      </div>
 
     </div>
   );
