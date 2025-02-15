@@ -3,6 +3,7 @@ import React from "react";
 import localFont from "next/font/local";
 import LocomotiveScroll from "locomotive-scroll";
 import { FaArrowDownLong } from "react-icons/fa6";
+import { Truculenta } from "next/font/google";
 
 const neue = localFont({
   src: "../app/fonts/neueBold.otf",
@@ -15,10 +16,19 @@ const NeueLight = localFont({
 });
 
 const page = () => {
-  const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll({
+    lenisOptions:{
+      smoothTouch:true,
+        syncTouch:true,
+        orientation:'vertical',
+        
+      
+
+    }
+  });
 
   return (
-    <div className="bg-[#d4c9c9] w-full  p-5 md:px-10 md:py-7 rtbf">
+    <div className="bg-[#d4c9c9] w-full  p-5 md:px-10 md:py-7">
       <div className=" nav flex justify-between uppercase text-base md:text-2xl">
         <h1 className={`${neue.className}`}>Locomotive.ca</h1>
         <h1 className={`${neue.className}`}>v4.x – Edition</h1>
@@ -165,8 +175,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className="w-full mt-[30rem] sticky top-40  " >
-        <div className="w-full md:w-1/2 ">
+      <div className="w-full mt-[30rem] h-[1000px] relative  ">
+        <div className="w-full md:w-1/2 sticky top-40 z-0 ">
           <div className="w-full md:w-[40vw] md:mt-72">
             <h1 className={`text-2xl ${Neuemedium.className} `}>02.</h1>
             <h1 className={`text-2xl ${Neuemedium.className} `}>
@@ -180,26 +190,30 @@ const page = () => {
         </div>
       </div>
 
-      <div className="my-10 h-screen bg-red-500">
-
-      <h1 data-scroll data-scroll-orientation = "horizontal" className= {`bg-white  uppercase text-[9vw] rotate-45 leading-none ${neue.className} `}>Ok, enough!!!!</h1>
-      <h1 className= {`bg-red-500  uppercase text-[9vw] rotate-180  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
-      <h1 className= {`bg-white  uppercase text-[9vw] rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
-      <h1 className= {`bg-white  uppercase text-[9vw] rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
-      <h1 className= {`bg-white  uppercase text-[9vw] -rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
-      <h1 className= {`bg-white  uppercase text-[9vw] rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
-      <h1 className= {`bg-white  uppercase text-[9vw] rotate-12  leading-none ${neue.className} `}>Ok, enough!!!!</h1>
+      <div className="mt-[-30rem] h-screen w-full">
+        <h1
+          data-scroll data-scroll-direction="horizontal" data-scroll-position='100,50%'
+          className={`bg-white  uppercase text-[9vw] rotate-[2deg]    ${neue.className} `}
+        >
+          Ok, enough!!!!
+        </h1>
+        <h1
+          
+          className={`bg-white  uppercase text-[9vw] rotate-[2deg]   ${neue.className} `}
+        >
+          Ok, enough!!!!
+        </h1>
+        <h1
+          className={`bg-white  uppercase text-[9vw] rotate-[2deg]   ${neue.className} `}
+          
+        >
+          Ok, enough!!!!
+        </h1>
+       
       </div>
 
-      <div className="bg-green-400 w-full h-screen mt-96 ">
-
-        afefwes
-      </div>
-      <div className="bg-green-400 w-full h-screen mt-96">
-
-        afefwes
-      </div>
-
+      <div className="bg-green-400 w-full h-screen mt-96">afefwes</div>
+      <div className="bg-green-400 w-full h-screen mt-96">afefwes</div>
     </div>
   );
 };
