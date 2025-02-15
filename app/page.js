@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import localFont from "next/font/local";
 import LocomotiveScroll from "locomotive-scroll";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { Truculenta } from "next/font/google";
+
+
 
 const neue = localFont({
   src: "../app/fonts/neueBold.otf",
@@ -16,16 +18,28 @@ const NeueLight = localFont({
 });
 
 const page = () => {
-  const locomotiveScroll = new LocomotiveScroll({
-    lenisOptions:{
-      smoothTouch:true,
-        syncTouch:true,
-        orientation:'vertical',
-        
-      
 
-    }
-  });
+
+
+  useEffect(() => {
+
+    const locomotiveScroll = new LocomotiveScroll({
+      lenisOptions:{
+          smoothTouch:true,
+          syncTouch:true,
+          orientation:'vertical',
+          
+        
+  
+      }
+    });
+  
+    
+  }, [])
+  
+
+
+  
 
   return (
     <div className="bg-[#d4c9c9] w-full  p-5 md:px-10 md:py-7">
